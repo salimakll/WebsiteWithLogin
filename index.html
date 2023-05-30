@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website With Login</title>
+    <link rel="stylesheet" href="style.css" />
+    <!--Unicons-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!--Bootstrap-->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"> -->
+</head>
+<body>
+    <!--Header-->
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="nav_logo">SalimAkıllı</a>
+            <ul class="nav_items">
+                <li class="nav_item">
+                    <a href="#" class="nav_link">Ana Sayfa</a>
+                    <a href="#" class="nav_link">Ürünler</a>
+                    <a href="#" class="nav_link">Yardım</a>
+                    <a href="#" class="nav_link">İletişim</a>
+                </li>
+            </ul>
+            <button class="button" id="form-open">Giriş Yap</button>
+        </nav>
+    </header>
+    <!--Home-->
+    <section class="home">
+        <div class="form_container">
+            <i class="uil uil-times form_close"></i>
+            <!--Login From-->
+            <div class="form login_form">
+                <form action="#">
+                    <h2>Giriş</h2>
+                    <div class="input_box">
+                        <input type="email" placeholder="Enter Your email" required>
+                        <i class="uil uil-envelope-alt email"></i>
+                    </div>
+                    <div class="input_box">
+                        <input type="password" placeholder="Enter Your password" required>
+                        <i class="uil uil-lock password"></i>
+                        <i class="uil uil-eye-slash pw_hide"></i>
+                    </div>
+                    <div class="option_field">
+                        <span class="checkbox">
+                            <input type="checkbox" id="check">
+                            <label for="check">Beni Hatırla</label>
+                        </span>
+                        <a href="#" class="forgot_pW">Şifremi Unuttum</a>
+                    </div>
+                    <button class="button">Giriş Yap</button>
+                    <div class="login_signup">
+                        Hala hesabın yok mu ? <a href="#"id='signup'>Kayıt ol</a>
+                    </div>
+                </form>
+            </div>
+            <!--Signup Form-->
+            <div class="form signup_form">
+                <form action="#">
+                    <h2>Üye ol</h2>
+                    <div class="input_box">
+                        <input type="email" placeholder="Enter Your email" required>
+                        <i class="uil uil-envelope-alt email"></i>
+                    </div>
+                    <div class="input_box">
+                        <input type="password" placeholder="Create password" required>
+                        <i class="uil uil-lock password"></i>
+                        <i class="uil uil-eye-slash pw_hide"></i>
+                    </div>
+                    <div class="input_box">
+                        <input type="password" placeholder="Confirm password" required>
+                        <i class="uil uil-lock password"></i>
+                        <i class="uil uil-eye-slash pw_hide"></i>
+                    </div>
+                    <button class="button">Şimdi kayıt ol</button>
+                    <div class="login_signup">
+                        Already have an account? <a href="#"id='login'>Login</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>    
+    <script src="script.js"></script>
+</body>
+</html>
